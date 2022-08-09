@@ -3,17 +3,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta http-equiv="x-ua-compatible" content="IE=edge"/>
-<title>Test results - Class com.librerianacional.Runners.LibroCompraRunner</title>
+<title>Test results - Class compra de libro</title>
 <link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
 <link href="../css/style.css" rel="stylesheet" type="text/css"/>
 <script src="../js/report.js" type="text/javascript"></script>
 </head>
 <body>
 <div id="content">
-<h1>Class com.librerianacional.Runners.LibroCompraRunner</h1>
+<h1>Class compra de libro</h1>
 <div class="breadcrumbs">
 <a href="../index.html">all</a> &gt; 
-<a href="../packages/com.librerianacional.Runners.html">com.librerianacional.Runners</a> &gt; LibroCompraRunner</div>
+<a href="../packages/default-package.html">default-package</a> &gt; compra de libro</div>
 <div id="summary">
 <table>
 <tr>
@@ -23,13 +23,13 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">0</div>
+<div class="counter">1</div>
 <p>tests</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">0</div>
+<div class="counter">1</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">-</div>
+<div class="counter">53.192s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox success" id="successRate">
-<div class="percent">-</div>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,39 +61,22 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Tests</a>
+<a href="#tab0">Failed tests</a>
 </li>
 <li>
-<a href="#tab1">Standard output</a>
+<a href="#tab1">Tests</a>
 </li>
 <li>
 <a href="#tab2">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Tests</h2>
-<table>
-<thead>
-<tr>
-<th>Test</th>
-<th>Duration</th>
-<th>Result</th>
-</tr>
-</thead>
-</table>
-</div>
-<div id="tab1" class="tab">
-<h2>Standard output</h2>
+<h2>Failed tests</h2>
+<div class="test">
+<a name="compra de libro exitoso"></a>
+<h3 class="failures">compra de libro exitoso</h3>
 <span class="code">
-<pre>
-?[31mFailed scenarios:?[0m
-?[31msrc/test/resources/features/librocompra.feature:5 ?[0m# compra de libro exitoso
-
-1 Scenarios (?[31m1 failed?[0m)
-3 Steps (?[31m1 failed?[0m, ?[32m2 passed?[0m)
-0m53,538s
-
-org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button _ngcontent-c26=&quot;&quot; class=&quot;bg-white p-2 d-flex justify-content-center align-items-center border amount&quot; data-dir=&quot;up&quot; type=&quot;button&quot;&gt;...&lt;/button&gt; is not clickable at point (268, 482). Other element would receive the click: &lt;div _ngcontent-c1=&quot;&quot; id=&quot;spinner&quot;&gt;...&lt;/div&gt;
+<pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button _ngcontent-c26=&quot;&quot; class=&quot;bg-white p-2 d-flex justify-content-center align-items-center border amount&quot; data-dir=&quot;up&quot; type=&quot;button&quot;&gt;...&lt;/button&gt; is not clickable at point (268, 482). Other element would receive the click: &lt;div _ngcontent-c1=&quot;&quot; id=&quot;spinner&quot;&gt;...&lt;/div&gt;
   (Session info: chrome=103.0.5060.134)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'SQAMED-SQA2056', ip: '192.168.1.42', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
@@ -124,42 +107,53 @@ Session ID: 1e4093d5ad9c205950a045b317c2a6c9
 	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
 	at com.librerianacional.Steps.PaginaUsuarioStep$$EnhancerByCGLIB$$bb80620f.añadirCarrito(&lt;generated&gt;)
 	at com.librerianacional.StepDefinitions.LibroCompraStepDefinition.visualizaraElProductoEnElCarroDeCompras(LibroCompraStepDefinition.java:31)
-	at ?.visualizara el producto en el carro de compras(src/test/resources/features/librocompra.feature:8)
-
+	at ✽.visualizara el producto en el carro de compras(src/test/resources/features/librocompra.feature:8)
 </pre>
 </span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">compra de libro exitoso</td>
+<td class="failures">53.192s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
 </div>
 <div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+<pre>ago 09, 2022 11:51:35 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized --disable..., goog:chromeOptions: {args: [--start-maximized, --disable-popup-blocking], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+Starting ChromeDriver 103.0.5060.24 (e47b049c438cd0a74dc95a011fceb27db18cb080-refs/branch-heads/5060@{#232}) on port 42422
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+ago 09, 2022 11:51:44 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
 
--------------------------------------------------------------------------------------
-     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
-    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
-   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
-    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
-.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
-|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
-                                                                                     
- News and tutorials at http://www.serenity-bdd.info                                  
- Documentation at https://wakaleo.gitbooks.io/the-serenity-book/content/             
- Join the Serenity Community on Rocket Chat at https://serenity-bdd.rocket.chat      
- Serenity BDD Support and Training at http://serenity-bdd.info/#/trainingandsupport  
- Learn Serenity BDD online at http://serenity-dojo.com                               
--------------------------------------------------------------------------------------
-
-[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: compra de libro
-[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
- _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
-|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
-  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
-  | | | |___ ___) || |    ___) || |/ ___ \|  _ &lt; | | | |___| |_| |
-  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
-                                                                  
-
-TEST STARTED: compra de libro exitoso
--------------------------------------------------------------------(compra-de-libro;compra-de-libro-exitoso)
+TEST FAILED WITH ERROR: compra de libro exitoso
+---------------------------------------------------------------------
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Añadir carrito
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - element click intercepted: Element &lt;button _ngcontent-c26=&quot;&quot; class=&quot;bg-white p-2 d-flex justify-content-center align-items-center border amount&quot; data-dir=&quot;up&quot; type=&quot;button&quot;&gt;...&lt;/button&gt; is not clickable at point (268, 482). Other element would receive the click: &lt;div _ngcontent-c1=&quot;&quot; id=&quot;spinner&quot;&gt;...&lt;/div&gt;
 </pre>
 </span>
 </div>

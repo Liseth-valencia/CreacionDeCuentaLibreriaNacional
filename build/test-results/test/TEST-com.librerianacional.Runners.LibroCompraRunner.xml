@@ -2,9 +2,45 @@
 <testsuite name="com.librerianacional.Runners.LibroCompraRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="SQAMED-SQA2056" time="0.0">
   <properties/>
   <system-out><![CDATA[
-1 Scenarios (?[32m1 passed?[0m)
-3 Steps (?[32m3 passed?[0m)
-1m6,231s
+?[31mFailed scenarios:?[0m
+?[31msrc/test/resources/features/librocompra.feature:5 ?[0m# compra de libro exitoso
+
+1 Scenarios (?[31m1 failed?[0m)
+3 Steps (?[31m1 failed?[0m, ?[32m2 passed?[0m)
+0m53,538s
+
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button _ngcontent-c26="" class="bg-white p-2 d-flex justify-content-center align-items-center border amount" data-dir="up" type="button">...</button> is not clickable at point (268, 482). Other element would receive the click: <div _ngcontent-c1="" id="spinner">...</div>
+  (Session info: chrome=103.0.5060.134)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SQAMED-SQA2056', ip: '192.168.1.42', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.24 (e47b049c438c..., userDataDir: C:\Users\EQUIPO~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51260}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 1e4093d5ad9c205950a045b317c2a6c9
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at com.librerianacional.Steps.PaginaUsuarioStep.añadirCarrito(PaginaUsuarioStep.java:26)
+	at com.librerianacional.Steps.PaginaUsuarioStep$$EnhancerByCGLIB$$bb80620f.CGLIB$añadirCarrito$2(<generated>)
+	at com.librerianacional.Steps.PaginaUsuarioStep$$EnhancerByCGLIB$$bb80620f$$FastClassByCGLIB$$2f5a4b4f.invoke(<generated>)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
+	at com.librerianacional.Steps.PaginaUsuarioStep$$EnhancerByCGLIB$$bb80620f.añadirCarrito(<generated>)
+	at com.librerianacional.StepDefinitions.LibroCompraStepDefinition.visualizaraElProductoEnElCarroDeCompras(LibroCompraStepDefinition.java:31)
+	at ?.visualizara el producto en el carro de compras(src/test/resources/features/librocompra.feature:8)
 
 ]]></system-out>
   <system-err><![CDATA[[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
@@ -24,7 +60,7 @@
  Learn Serenity BDD online at http://serenity-dojo.com                               
 -------------------------------------------------------------------------------------
 
-[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: compra de libro exitoso
+[Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: compra de libro
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
  _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
 |_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
@@ -33,7 +69,7 @@
   |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
                                                                   
 
-TEST STARTED: compra de libro
--------------------------------------------------------------------(compra-de-libro-exitoso;compra-de-libro)
+TEST STARTED: compra de libro exitoso
+-------------------------------------------------------------------(compra-de-libro;compra-de-libro-exitoso)
 ]]></system-err>
 </testsuite>

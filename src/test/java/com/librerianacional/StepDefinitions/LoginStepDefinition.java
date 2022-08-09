@@ -10,16 +10,15 @@ public class LoginStepDefinition {
     @Steps
     PaginaPrincipalStep paginaPrincipalStep;
 
-    @Dado("^el usuario se encuentre en la pagina$")
-    public void elUsuarioSeEncuentreEnLaPagina() {
+    @Dado("^el usuario se encuentre en la pagina web$")
+    public void el_usuario_se_encuentre_en_la_pagina_web() {
         paginaPrincipalStep.abrirNavegador();
     }
 
-    @Cuando("^el presione el boton mi cuenta y luego da a registrarse$")
-    public void elPresioneElBotonMiCuentaYLuegoDaARegistrarse() {
+    @Cuando("^el presione el boton mi cuenta para registrarse$")
+    public void el_presione_el_boton_mi_cuenta_para_registrarse() {
         paginaPrincipalStep.clicMiCuenta();
     }
-
     @Cuando("^debera llenar un formulario de datos personales$")
     public void deberaLlenarUnFormularioDeDatosPersonales() {
         paginaPrincipalStep.llenarFormulario();
